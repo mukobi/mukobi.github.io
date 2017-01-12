@@ -1,9 +1,10 @@
 /*
 color scheme:
-  void: #0E0B16
-  fuschia: #A239CA
-  jewel: #4717F6
-  stark: #E7DFDD
+  green: #83AA30
+  blue: #1499D3
+  navy: #4D6684
+  grey: #3D3D3D
+  orange: #E74700
 */
 
 html {
@@ -25,15 +26,17 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
 body {
-  background-color: #AAAAAA;
   color: #E7DFDD;
 }
 
 a {
   color: #4717F6
+}
+
+h2 {
+  text-align: center;
+  margin: 15px 0;
 }
 
 
@@ -42,9 +45,9 @@ a {
   height: 80px;
   position: fixed;
   width: 100%;
-  background-color: #4717F6;
-  color: #E7DFDD;
-  border-bottom: 3px solid #4717F6;
+  background-color: #83AA30;
+  color: white;
+  border-bottom: 5px solid white;
 }
 
 .navwidthwrapper {
@@ -70,7 +73,7 @@ a {
   padding: 20px;
   margin: 0 10px;
   text-align: center;
-  color: #E7DFDD;
+  color: white;
 }
 
 .navspacer {height: 80px; width: 100%;}
@@ -79,34 +82,34 @@ a {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
   padding: 20px;
 }
 
-.about {
-  background-color: #2ECC40;
-  color: black;
+.maincontent > div:nth-child(odd) {
+  background-color: #3D3D3D;
+  color: white;
+}
+
+.maincontent > div:nth-child(even) {
+  background-color: #4D6684;
+  color: white;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: space-around;
 }
 
 .about img {
   height: 200px;
   width: 200px;
-  border: 5px solid #A239CA;
+  border: 5px solid #83AA30;
   border-radius: 100%;
 }
 
-.portfolio {
-  background-color: #85144b;
-  color: white;
+.portfolioscreenshots > img {
+  border: 5px solid #83AA30;
 }
-
-.contact {
-  background-color: #FFDC00;
-  color: black;
-
-}
-
 
 .footer {
   background-color: #E7DFDD;
@@ -126,7 +129,7 @@ a {
 
 .copyright {
   text-align: center;
-  background-color: #A239CA;
-  color: #E7DFDD;
+  background-color: #E74700;
+  color: white;
   padding: 20px;
 }
