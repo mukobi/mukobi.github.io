@@ -31,11 +31,15 @@ body {
 }
 
 a {
-  color: #4717F6
+  color: #83AA30
 }
 
 h2 {
   text-align: center;
+  margin: 20px 0;
+}
+
+h3 {
   margin: 15px 0;
 }
 
@@ -80,11 +84,17 @@ h2 {
 
 .navspacer {height: 80px; width: 100%;}
 
+.navtarget {
+
+}
+
+
+
 .maincontent > div > .contentwidthwrapper {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 .maincontent > div:nth-child(odd) {
@@ -132,7 +142,6 @@ h2 {
 
 
 /***portfolio***/
-.portfolioscreenshots a {color: #83AA30}
 
 .portfolioscreenshots > .flexrow {
   justify-content: space-around;
@@ -147,7 +156,7 @@ h2 {
 }
 
 .portfolioscreenshots > .flexrow > div {
-  width: 200px;
+  width: 225px;
 }
 
 .portfolioscreenshots > .flexrow:nth-child(even) > div > * {
@@ -155,7 +164,29 @@ h2 {
 }
 
 
+/***contact***/
+.contact ul li, .contact p {
+  margin-bottom: 15px;
+  text-align: center
+}
 
+.contact p {
+  margin-bottom: 15px;
+}
+
+.contact form {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact form input {
+  padding: 8px;
+}
+
+.contact .messageinput {
+/*   width: 80%; */
+}
 
 /***footer***/
 .footer {
