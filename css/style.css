@@ -34,6 +34,10 @@ a {
   color: #83AA30
 }
 
+p {
+  text-align: justify;
+}
+
 h2 {
   text-align: center;
   margin: 20px 0;
@@ -116,7 +120,7 @@ h3 {
 
 
 /***about***/
-.about img {
+.description_about img {
   border: 5px solid #83AA30;
   border-radius: 100%;
   height: 100vw;
@@ -140,19 +144,44 @@ h3 {
 }
 
 
+/*resume*/
+
+.resume .flexrow {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.viewpdf, .printpdf {
+  display: block;
+  padding: 15px;
+  margin: 30px 0px;
+  width: 47%;
+  text-align: center;
+  background-color: white;
+  border: 5px solid #83AA30;
+  /*border-radius: 5px;*/
+}
+
+
+.resume img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  border: 5px solid #83AA30;
+}
+
 
 /***portfolio***/
 
 .portfolioscreenshots > .flexrow {
-  justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
 }
 
 .portfolioscreenshots img {
   border: 5px solid #83AA30;
-  height: 300px;
-  width: auto;
+  width: 100%;
+  max-width: 480px;
 }
 
 .portfolioscreenshots > .flexrow > div {
