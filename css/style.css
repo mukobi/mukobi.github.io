@@ -285,8 +285,11 @@ h3 {
 }
 
 .copyright {
-  text-align: center;
   background-color: #E74700;
   color: white;
   padding: 20px;
+}
+
+.copyright p {
+  text-align: center;
 }
