@@ -50,6 +50,15 @@ h3 {
 .aligncenter {text-align: center;}
 
 
+.flexrow {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.last {margin-right: 0 !important;}
+
 
 /*navbar master*/
 .navbar {
@@ -74,25 +83,53 @@ h3 {
   margin: auto 0;
 }
 
+
 .navigation {
-  padding: 10px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 50%;
 }
 
-.navigation li {
-  display: inline-block;
-  padding: 20px;
-  margin: 0 10px;
+.navigation a {
+  display: block;
+  width: 30%;
   text-align: center;
   color: white;
+  text-decoration: none;
+  font-size: 115%;
 }
 
 .navspacer {height: 80px; width: 100%;}
 
-.navtarget {
+/*phone rearrangement*/
+@media screen and (max-width: 720px) {
+  .navwidthwrapper {
+    margin: 0 10px 0 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {width: 60%;}
+  h1 {font-size: 24px;}
+}
+
+/*tiny phone rearrangement*/
+@media screen and (max-width: 500px) {
+  .logo {width: 100px;}
+  .navigation {width: 70%;}
+}
+
+@media screen and (max-width: 400px) {
+  .navigation a {
+    font-size: 100%;
+    width: auto;
+    margin-right: 10px;
+  }
 
 }
 
 
+/***maincontent***/
 
 .maincontent > div > .contentwidthwrapper {
   width: 90%;
@@ -111,11 +148,6 @@ h3 {
   color: white;
 }
 
-.flexrow {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 
 
 
@@ -192,30 +224,36 @@ h3 {
   text-align: right;
 }
 
+@media screen and (max-width: 900px) {
+  .portfolioscreenshots > .flexrow > div { /*text box inside*/
+    width: 80%;
+    margin: 20px 10%;
+    order: 2;
+  }
+
+  .portfolioscreenshots > .flexrow > div > * {
+    text-align: justify !important;
+  }
+}
+
 
 /***contact***/
-.contact ul li, .contact p {
+.about_contact {
+  width: 50%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 720px) {
+  .about_contact {width: 80%;}
+}
+
+.contact ul li, .contact .accounts p {
   margin-bottom: 15px;
   text-align: center
 }
 
-.contact p {
-  margin-bottom: 15px;
-}
 
-.contact form {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
 
-.contact form input {
-  padding: 8px;
-}
-
-.contact .messageinput {
-/*   width: 80%; */
-}
 
 /***footer***/
 .footer {
@@ -234,47 +272,21 @@ h3 {
   text-align: center;
 }
 
+.about_site, .around_web  {
+  width: 50%;
+}
+
+.about_site h4, .around_web h4{
+  margin-bottom: 20px;
+}
+
+.footer .around_web img {
+  height: 70px;
+}
+
 .copyright {
   text-align: center;
   background-color: #E74700;
   color: white;
   padding: 20px;
-}
-
-
-
-/*under desktop rearrangement*/
-@media screen and (max-width: 900px) {
-  .navigation li {
-    display: inline-block;
-    padding: 20px;
-    margin: 0 10px;
-    text-align: center;
-    color: white;
-  }
-}
-
-/*phone rearrangement*/
-@media screen and (max-width: 720px) {
-  .navwidthwrapper {
-    margin: 0 10px 0 20px;
-  }
-
-  h1 {font-size: 24px;}
-
-
-
-  .navigation li {
-    display: inline-block;
-    padding: 20px 0;
-    margin: 0 10px;
-    text-align: center;
-    color: white;
-  }
-}
-
-/*tiny phone rearrangement*/
-@media screen and (max-width: 400px) {
-  .logo {width: 100px;}
-  .navigation {padding: 10px 0;}
 }
