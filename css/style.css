@@ -5,6 +5,23 @@ color scheme:
   navy: #4D6684
   grey: #3D3D3D
   orange: #E74700
+
+<img src="http://i.imgur.com/0jDk8C9.jpg" alt="Gabriel Mukobi">
+
+  <a href="http://www.simply8band.com"><img src="http://i.imgur.com/8QlrHtf.jpg" alt="Simply 8 Band website screenshot" /></a>
+
+<a href="http://www.kasesewildlife.org"><img src="http://i.imgur.com/wf6lzYV.jpg" alt="Kasese Wildlife website screenshot" /></a>
+
+<img src="http://i.imgur.com/PGZLMwF.jpg" />
+*/
+
+/*
+color scheme:
+  green: #83AA30
+  blue: #1499D3
+  navy: #4D6684
+  grey: #3D3D3D
+  orange: #E74700
 */
 
 html {
@@ -201,7 +218,7 @@ h3 {
   margin: 0 auto;
 }
 
-.viewpdf, .printpdf {
+.viewpdf, .downloadpdf {
   display: block;
   padding: 15px;
   margin: 30px 0px;
@@ -303,8 +320,7 @@ h3 {
 }
 
 .copyright {
-  background-color: #E74700;
-  color: white;
+  color: #0E0B16;
   padding: 20px;
 }
 
