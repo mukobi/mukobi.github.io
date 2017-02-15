@@ -104,7 +104,6 @@ h4 {
   margin: auto 0;
 }
 
-
 .navigation {
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -173,8 +172,6 @@ h4 {
 }
 
 
-
-
 /***about***/
 .description_about img {
   border: 5px solid #83AA30;
@@ -231,6 +228,16 @@ h4 {
   background-color: white;
   border: 5px solid #83AA30;
   /*border-radius: 5px;*/
+}
+
+@media screen and (max-width: 500px) {
+  .viewpdf, .downloadpdf {
+    padding: 15px 5px;
+    margin: 15px 0px;
+  }
+  .viewpdf > span, .downloadpdf > span {
+    display: block;
+  }
 }
 
 
@@ -348,6 +355,14 @@ h4 {
 
 .footer .around_web img {
   height: 80px;
+}
+
+.around_web {
+  text-align: center;
+}
+.around_web img {
+  display: inline-block;
+  margin: 10px;
 }
 
 
