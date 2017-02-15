@@ -271,6 +271,18 @@ h3 {
   }
 }
 
+.curriculumvitae p {
+  margin-bottom: 20px;
+}
+.curriculumvitae li {
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.curriculumvitae h3 {
+  margin-top: 40px;
+}
+
 
 /***contact***/
 .about_contact {
