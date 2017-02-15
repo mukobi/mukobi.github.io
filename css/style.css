@@ -64,6 +64,10 @@ h3 {
   margin: 15px 0;
 }
 
+h4 {
+  text-align: center;
+}
+
 .aligncenter {text-align: center;}
 
 
@@ -312,15 +316,30 @@ h3 {
   /*height: 100%;*/
   max-width: 960px;
   margin: 0 auto;
-  display: flex;
   justify-content: space-between;
   color: #0E0B16;
   padding: 20px 0;
+}
+
+.footercontent > div {
+  margin-bottom: 30px;
+}
+
+.footercontent .newest {
+  width: 100%;
+}
+
+.newest h3 {
   text-align: center;
 }
 
+.newest li {
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
 .about_site, .around_web  {
-  width: 50%;
+  max-width: 50%;
 }
 
 .about_site h4, .around_web h4{
