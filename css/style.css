@@ -55,17 +55,24 @@ p {
   text-align: justify;
 }
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
 h2 {
   text-align: center;
   margin: 20px 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 h3 {
   margin: 15px 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 h4 {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .aligncenter {text-align: center;}
@@ -117,6 +124,7 @@ h4 {
   color: white;
   text-decoration: none;
   font-size: 115%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navspacer {height: 80px; width: 100%;}
