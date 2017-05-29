@@ -75,6 +75,10 @@ h4 {
   font-family: 'Raleway', sans-serif;
 }
 
+li {
+  list-style-type: square;
+}
+
 .aligncenter {text-align: center;}
 
 
@@ -300,6 +304,16 @@ h4 {
 
 .curriculumvitae h3 {
   margin-top: 40px;
+}
+
+.tableul > li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.tableul > li:before {
+  content: '\ffed';
+  margin-right: 0.3em;
 }
 
 
