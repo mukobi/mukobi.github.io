@@ -118,17 +118,18 @@ li {
 .navigation {
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 50%;
 }
 
 .navigation a {
   display: block;
-  width: 30%;
+  padding: 0 25px;
   text-align: center;
   color: white;
   text-decoration: none;
   font-size: 115%;
   font-family: 'Raleway', sans-serif;
+  height: 100%;
+  line-height: 75px;
 }
 
 .navspacer {height: 80px; width: 100%;}
@@ -141,22 +142,29 @@ li {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .navigation {width: 60%;}
+@media screen and (max-width: 540px) {
   h1 {font-size: 24px;}
 }
 
 /*tiny phone rearrangement*/
 @media screen and (max-width: 500px) {
   .logo {width: 100px;}
-  .navigation {width: 70%;}
+  .navigation a {
+    padding: 0 10px;
+  }
+  .navigation .cvnav {
+    padding: 0 15px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .navigation a {
-    font-size: 100%;
+    font-size: 14px;;
     width: auto;
-    margin-right: 10px;
+    padding: 0 5px;
+  }
+  .navigation .cvnav {
+    padding: 0 10px;
   }
   .navwidthwrapper {
     margin: 0 10px 0 10px;
