@@ -270,6 +270,9 @@ li {
 
 
 /***portfolio***/
+.portfolio > div > h2 {
+  margin-bottom: 50px;
+}
 
 .portfolioscreenshots > .flexrow {
   align-items: center;
@@ -364,6 +367,13 @@ li {
 
 .footercontent .newest {
   width: 100%;
+}
+
+.newest_scroll {
+  height: 250px;
+  overflow-y: scroll;
+  background-color: #cfc8c6;
+  padding: 30px;
 }
 
 .newest h3 {
