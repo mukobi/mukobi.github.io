@@ -204,6 +204,10 @@ li {
   max-width: 480px;
 }
 
+.about p a {
+  color: white;
+}
+
 .description_about > div {
   margin-bottom: 20px;
 }
@@ -291,6 +295,10 @@ li {
 
 .portfolioscreenshots > .flexrow:nth-child(even) > div > * {
   text-align: right;
+}
+
+.portfolioscreenshots > .flexrow:nth-child(odd) > div > * {
+  text-align: left;
 }
 
 @media screen and (max-width: 900px) {
