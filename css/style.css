@@ -5,14 +5,6 @@ color scheme:
   navy: #4D6684
   grey: #3D3D3D
   orange: #E74700
-
-<img src="http://i.imgur.com/0jDk8C9.jpg" alt="Gabriel Mukobi">
-
-  <a href="http://www.simply8band.com"><img src="http://i.imgur.com/8QlrHtf.jpg" alt="Simply 8 Band website screenshot" /></a>
-
-<a href="http://www.kasesewildlife.org"><img src="http://i.imgur.com/wf6lzYV.jpg" alt="Kasese Wildlife website screenshot" /></a>
-
-<img src="http://i.imgur.com/PGZLMwF.jpg" />
 */
 
 /*
@@ -48,7 +40,7 @@ body {
 }
 
 a {
-  color: #83AA30
+  color: rgb(89, 194, 255);
 }
 
 p {
@@ -97,7 +89,7 @@ li {
   height: 80px;
   position: fixed;
   width: 100%;
-  background-color: #83AA30;
+  background: linear-gradient(to left, rgb(42, 107, 22), #83AA30);
   color: white;
   border-bottom: 5px solid white;
 }
@@ -181,13 +173,23 @@ li {
   padding: 60px 20px;
 }
 
-.maincontent > div:nth-child(odd) {
-  background-color: #3D3D3D;
+.maincontent > div:nth-child(1) {
+  background: linear-gradient(rgb(148, 148, 148), #3D3D3D);
+  color: white;
+} 
+
+.maincontent > div:nth-child(2) {
+  background: linear-gradient( rgb(65, 131, 212), rgb(44, 76, 116)); 
   color: white;
 }
 
-.maincontent > div:nth-child(even) {
-  background-color: #4D6684;
+.maincontent > div:nth-child(3) {
+  background: linear-gradient( rgb(88, 202, 88), rgb(18, 97, 38)); 
+  color: white;
+}
+
+.maincontent > div:nth-child(4) {
+  background: linear-gradient( rgb(169, 69, 194), rgb(74, 12, 77)); 
   color: white;
 }
 
@@ -202,10 +204,6 @@ li {
 
 .description_about > div > p {
   max-width: 480px;
-}
-
-.about p a {
-  color: white;
 }
 
 .description_about > div {
@@ -251,6 +249,7 @@ li {
   text-align: center;
   background-color: white;
   border: 5px solid #83AA30;
+  color: #83AA30;
   /*border-radius: 5px;*/
 }
 
@@ -356,7 +355,7 @@ li {
 
 /***footer***/
 .footer {
-  background-color: #E7DFDD;
+  background: linear-gradient(#E7DFDD, rgb(150, 145, 143));
 }
 
 .footercontent {
@@ -380,7 +379,7 @@ li {
 .newest_scroll {
   height: 250px;
   overflow-y: scroll;
-  background-color: #cfc8c6;
+  background: linear-gradient(#cfc8c6, #a19c9a);
   padding: 30px;
 }
 
