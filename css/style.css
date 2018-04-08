@@ -1,6 +1,6 @@
 /*
 color scheme:
-  green: #83AA30
+  green: #31da47
   blue: #1499D3
   navy: #4D6684
   grey: #3D3D3D
@@ -9,7 +9,7 @@ color scheme:
 
 /*
 color scheme:
-  green: #83AA30
+  green: #31da47
   blue: #1499D3
   navy: #4D6684
   grey: #3D3D3D
@@ -40,7 +40,7 @@ body {
 }
 
 a {
-  color: rgb(49, 218, 71);
+  color: #31da47;
 }
 
 p {
@@ -89,7 +89,7 @@ li {
   height: 80px;
   position: fixed;
   width: 100%;
-  background: linear-gradient(to left, rgb(42, 107, 22), #83AA30);
+  background: linear-gradient(to left, rgb(42, 107, 22), rgb(110, 180, 45));
   color: white;
   border-bottom: 5px solid white;
 }
@@ -196,7 +196,7 @@ li {
 
 /***about***/
 .description_about img {
-  border: 5px solid #83AA30;
+  border: 5px solid #31da47;
   border-radius: 100%;
   width: 100%;
   max-width: 300px;
@@ -248,7 +248,7 @@ li {
   width: 47%;
   text-align: center;
   background-color: white;
-  border: 5px solid #83AA30;
+  border: 5px solid #31da47;
   /*border-radius: 5px;*/
 }
 
@@ -267,7 +267,7 @@ li {
   width: 80%;
   margin: 0 auto;
   display: block;
-  border: 5px solid #83AA30;
+  border: 5px solid #31da47;
 }
 
 
@@ -282,7 +282,7 @@ li {
 }
 
 .portfolioscreenshots img {
-  border: 5px solid #83AA30;
+  border: 5px solid #31da47;
   width: 100%;
   max-width: 480px;
 }
