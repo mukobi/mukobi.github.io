@@ -84,7 +84,7 @@ li {
 
 .last {margin-right: 0 !important;}
 
-div.spacer {height: 40px;}
+div.spacer {height: 16px;}
 
 
 /*navbar master*/
@@ -240,8 +240,9 @@ div.spacer {height: 40px;}
 /*resume*/
 
 .resume .flexrow {
-  width: 83%;
+  width: 80%;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .viewpdf, .downloadpdf {
@@ -255,7 +256,15 @@ div.spacer {height: 40px;}
   /*border-radius: 5px;*/
 }
 
+.resume img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  border: 5px solid #31da47;
+}
+
 @media screen and (max-width: 500px) {
+  .resume .flexrow, .resume img { width: 100%;}
   .viewpdf, .downloadpdf {
     padding: 15px 5px;
     margin: 15px 0px;
@@ -263,14 +272,6 @@ div.spacer {height: 40px;}
   .viewpdf > span, .downloadpdf > span {
     display: block;
   }
-}
-
-
-.resume img {
-  width: 80%;
-  margin: 0 auto;
-  display: block;
-  border: 5px solid #31da47;
 }
 
 
