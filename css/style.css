@@ -404,6 +404,10 @@ div.spacer {height: 16px;}
   margin-left: 25px;
 }
 
+.newest li:last-child {
+  margin-bottom: 0;
+}
+
 .about_site, .around_web  {
   max-width: 50%;
 }
