@@ -60,6 +60,7 @@ h2 {
 h3 {
   margin: 15px 0;
   font-family: 'Raleway', sans-serif;
+  font-weight: 900;
   /* text-shadow: 0 0px 6px black; */
 }
 
@@ -68,17 +69,11 @@ h4 {
   font-family: 'Raleway', sans-serif;
 }
 
-h4.subtitle {
-  margin: 15px 0;
-  text-align: left;
-}
-
 li {
   list-style-type: square;
 }
 
 .aligncenter {text-align: center;}
-
 
 .flexrow {
   display: flex;
@@ -88,6 +83,8 @@ li {
 }
 
 .last {margin-right: 0 !important;}
+
+div.spacer {height: 40px;}
 
 
 /*navbar master*/
@@ -337,6 +334,17 @@ li {
 .tableul > li:before {
   content: '\ffed';
   margin-right: 0.3em;
+}
+
+/***CV***/
+.cv h3 {
+  text-align: center;
+  font-weight: 900;
+}
+
+.cv h4 {
+  margin: 15px 0;
+  text-align: left;
 }
 
 
