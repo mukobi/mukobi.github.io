@@ -21,7 +21,10 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -31,7 +34,7 @@ html {
 * {
   padding: 0;
   margin: 0;
-/*   background-color: rgba(0,0,255,0.2); */
+  /*   background-color: rgba(0,0,255,0.2); */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -41,6 +44,15 @@ body {
 
 a {
   color: #31da47;
+  text-shadow: 0 3px 6px black;
+}
+
+img, .pop-box-shadow {
+  box-shadow: 0 3px 6px black;
+}
+
+.no-shadow {
+  text-shadow: none;
 }
 
 p {
@@ -49,31 +61,36 @@ p {
 
 h1 {
   font-family: 'Raleway', sans-serif;
+  text-shadow: 0 3px 6px black;
 }
 
 h2 {
   text-align: center;
   margin: 20px 0;
   font-family: 'Raleway', sans-serif;
+  text-shadow: 0 3px 6px black;
 }
 
 h3 {
   margin: 15px 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
-  /* text-shadow: 0 0px 6px black; */
+  text-shadow: 0 3px 6px black;
 }
 
 h4 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  text-shadow: 0 3px 6px black;
 }
 
 li {
   list-style-type: square;
 }
 
-.aligncenter {text-align: center;}
+.aligncenter {
+  text-align: center;
+}
 
 .flexrow {
   display: flex;
@@ -82,7 +99,9 @@ li {
   align-items: center;
 }
 
-.last {margin-right: 0 !important;}
+.last {
+  margin-right: 0 !important;
+}
 
 /*navbar master*/
 .navbar {
@@ -124,7 +143,10 @@ li {
   line-height: 75px;
 }
 
-.navspacer {height: 80px; width: 100%;}
+.navspacer {
+  height: 80px;
+  width: 100%;
+}
 
 /*phone rearrangement*/
 @media screen and (max-width: 720px) {
@@ -135,15 +157,21 @@ li {
 }
 
 @media screen and (max-width: 540px) {
-  h1 {font-size: 24px;}
+  h1 {
+    font-size: 24px;
+  }
 }
 
 /*tiny phone rearrangement*/
 @media screen and (max-width: 500px) {
-  .logo {width: 100px;}
+  .logo {
+    width: 100px;
+  }
+
   .navigation a {
     padding: 0 10px;
   }
+
   .navigation .cvnav {
     padding: 0 15px;
   }
@@ -151,13 +179,16 @@ li {
 
 @media screen and (max-width: 400px) {
   .navigation a {
-    font-size: 14px;;
+    font-size: 14px;
+    ;
     width: auto;
     padding: 0 5px;
   }
+
   .navigation .cvnav {
     padding: 0 10px;
   }
+
   .navwidthwrapper {
     margin: 0 10px 0 10px;
   }
@@ -166,30 +197,30 @@ li {
 
 /***maincontent***/
 
-.maincontent > div > .contentwidthwrapper {
+.maincontent>div>.contentwidthwrapper {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 20px;
 }
 
-.maincontent > div:nth-child(1) {
+.maincontent>div:nth-child(1) {
   background: linear-gradient(rgb(126, 125, 125), #3D3D3D);
   color: white;
-} 
+}
 
-.maincontent > div:nth-child(2) {
-  background: linear-gradient( rgb(65, 131, 212), rgb(44, 76, 116)); 
+.maincontent>div:nth-child(2) {
+  background: linear-gradient(rgb(65, 131, 212), rgb(44, 76, 116));
   color: white;
 }
 
-.maincontent > div:nth-child(3) {
-  background: linear-gradient( rgb(78, 189, 78), rgb(18, 97, 38)); 
+.maincontent>div:nth-child(3) {
+  background: linear-gradient(rgb(78, 189, 78), rgb(18, 97, 38));
   color: white;
 }
 
-.maincontent > div:nth-child(4) {
-  background: linear-gradient( rgb(163, 60, 189), rgb(100, 29, 128)); 
+.maincontent>div:nth-child(4) {
+  background: linear-gradient(rgb(163, 60, 189), rgb(100, 29, 128));
   color: white;
 }
 
@@ -202,11 +233,11 @@ li {
   max-width: 300px;
 }
 
-.description_about > div > p {
+.description_about>div>p {
   max-width: 480px;
 }
 
-.description_about > div {
+.description_about>div {
   margin-bottom: 20px;
 }
 
@@ -214,7 +245,7 @@ li {
   align-items: center;
 }
 
-.about .flexrow div:first-child > * {
+.about .flexrow div:first-child>* {
   margin-bottom: 15px;
   display: block;
 }
@@ -222,6 +253,7 @@ li {
 .description_about .flexrow div:nth-child(1) {
   max-width: 600px;
 }
+
 .description_about div:nth-child(2) {
   max-width: 300px;
   width: 97%;
@@ -242,7 +274,8 @@ li {
   justify-content: space-between;
 }
 
-.viewpdf, .downloadpdf {
+.viewpdf,
+.downloadpdf {
   display: block;
   padding: 15px;
   margin: 30px 0px;
@@ -261,23 +294,31 @@ li {
 }
 
 @media screen and (max-width: 500px) {
-  .resume .flexrow, .resume img { width: 100%;}
-  .viewpdf, .downloadpdf {
+
+  .resume .flexrow,
+  .resume img {
+    width: 100%;
+  }
+
+  .viewpdf,
+  .downloadpdf {
     padding: 15px 5px;
     margin: 15px 0px;
   }
-  .viewpdf > span, .downloadpdf > span {
+
+  .viewpdf>span,
+  .downloadpdf>span {
     display: block;
   }
 }
 
 
 /***portfolio***/
-.portfolio > div > h2 {
+.portfolio>div>h2 {
   margin-bottom: 50px;
 }
 
-.portfolioscreenshots > .flexrow {
+.portfolioscreenshots>.flexrow {
   align-items: center;
   margin-bottom: 40px;
 }
@@ -288,26 +329,27 @@ li {
   max-width: 480px;
 }
 
-.portfolioscreenshots > .flexrow > div {
+.portfolioscreenshots>.flexrow>div {
   width: 225px;
 }
 
-.portfolioscreenshots > .flexrow:nth-child(even) > div > * {
+.portfolioscreenshots>.flexrow:nth-child(even)>div>* {
   text-align: right;
 }
 
-.portfolioscreenshots > .flexrow:nth-child(odd) > div > * {
+.portfolioscreenshots>.flexrow:nth-child(odd)>div>* {
   text-align: left;
 }
 
 @media screen and (max-width: 900px) {
-  .portfolioscreenshots > .flexrow > div { /*text box inside*/
+  .portfolioscreenshots>.flexrow>div {
+    /*text box inside*/
     width: 80%;
     margin: 20px 10%;
     order: 2;
   }
 
-  .portfolioscreenshots > .flexrow > div > * {
+  .portfolioscreenshots>.flexrow>div>* {
     text-align: justify !important;
   }
 }
@@ -327,8 +369,8 @@ li {
   font-style: italic;
 }
 
-.cv .curriculumvitae > div:not(:last-child) {
-margin-bottom: 80px;
+.cv .curriculumvitae>div:not(:last-child) {
+  margin-bottom: 80px;
 }
 
 .curriculumvitae p {
@@ -356,10 +398,13 @@ margin-bottom: 80px;
 }
 
 @media screen and (max-width: 720px) {
-  .about_contact {width: 80%;}
+  .about_contact {
+    width: 80%;
+  }
 }
 
-.contact ul li, .contact .accounts p {
+.contact ul li,
+.contact .accounts p {
   margin-bottom: 15px;
   text-align: center
 }
@@ -380,7 +425,7 @@ margin-bottom: 80px;
   padding: 20px 0;
 }
 
-.footercontent > div {
+.footercontent>div {
   margin-bottom: 30px;
 }
 
@@ -408,11 +453,13 @@ margin-bottom: 80px;
   margin-bottom: 0;
 }
 
-.about_site, .around_web  {
+.about_site,
+.around_web {
   max-width: 50%;
 }
 
-.about_site h4, .around_web h4{
+.about_site h4,
+.around_web h4 {
   margin-bottom: 20px;
 }
 
@@ -423,9 +470,11 @@ margin-bottom: 80px;
 .around_web {
   text-align: center;
 }
+
 .around_web img {
   display: inline-block;
   margin: 10px;
+  border-radius: 8px;
 }
 
 
