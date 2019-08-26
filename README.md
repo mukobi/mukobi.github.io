@@ -1,3 +1,5 @@
-# mukobi.github.io
+# gabrielmukobi.com
 
-##This is an online portfolio for Gabriel Mukobi, a current high school student at Camas High School in Camas, WA.
+[gabrielmukobi.com](https://gabrielmukobi.com)
+
+An online portfolio for Gabriel Mukobi, a current undergraduate student studying computer science at Stanford University.
