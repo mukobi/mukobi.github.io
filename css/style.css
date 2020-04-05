@@ -213,7 +213,7 @@ li {
 }
 
 .maincontent > div:nth-child(3) {
-  background: linear-gradient(rgb(78, 189, 78), rgb(18, 97, 38));
+  background: linear-gradient(rgb(60, 172, 60), rgb(18, 97, 38));
   color: white;
 }
 
