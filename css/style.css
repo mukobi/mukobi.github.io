@@ -203,17 +203,17 @@ li {
 }
 
 .maincontent > div:nth-child(1) {
-  background: linear-gradient(rgb(126, 125, 125), #3d3d3d);
+  background: linear-gradient(rgb(126, 125, 125), #333333);
   color: white;
 }
 
 .maincontent > div:nth-child(2) {
-  background: linear-gradient(rgb(65, 131, 212), rgb(44, 76, 116));
+  background: linear-gradient(rgb(65, 131, 212), rgb(20, 52, 92));
   color: white;
 }
 
 .maincontent > div:nth-child(3) {
-  background: linear-gradient(rgb(60, 172, 60), rgb(12, 75, 27));
+  background: linear-gradient(rgb(47, 151, 47), rgb(8, 61, 21));
   color: white;
 }
 
