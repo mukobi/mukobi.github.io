@@ -1,15 +1,7 @@
 /*
 color scheme:
-  green: #31da47
-  blue: #1499D3
-  navy: #4D6684
-  grey: #3D3D3D
-  orange: #E74700
-*/
-
-/*
-color scheme:
-  green: #31da47
+  bright green: #31ee4a
+  darker green: #00c842
   blue: #1499D3
   navy: #4D6684
   grey: #3D3D3D
@@ -42,8 +34,12 @@ body {
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.664);
 }
 
-a {
-  color: #31da47;
+a, .color-accent-light {
+  color: #31ee4a;
+}
+
+.color-accent-dark {
+  color: #00c842;
 }
 
 img,
@@ -81,7 +77,7 @@ h4 {
 }
 
 /* strong text shadow */
-a, h1, h2, h3, h4 {
+a, h1, h2, h3, h4, .strong-shadow {
   text-shadow: 0 4px 4px black;
 }
 
@@ -225,7 +221,7 @@ li {
 
 /***about***/
 .description_about img {
-  border: 5px solid #31da47;
+  border: 5px solid #31ee4a;
   border-radius: 100%;
   width: 100%;
   max-width: 300px;
@@ -279,7 +275,7 @@ li {
   width: 47%;
   text-align: center;
   background-color: white;
-  border: 5px solid #31da47;
+  border: 5px solid #31ee4a;
   /*border-radius: 5px;*/
 }
 
@@ -287,7 +283,7 @@ li {
   width: 80%;
   margin: 0 auto;
   display: block;
-  border: 5px solid #31da47;
+  border: 5px solid #31ee4a;
 }
 
 @media screen and (max-width: 500px) {
