@@ -39,11 +39,11 @@ html {
 
 body {
   color: #e7dfdd;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.664);
 }
 
 a {
   color: #31da47;
-  text-shadow: 0 3px 6px black;
 }
 
 img,
@@ -61,27 +61,28 @@ p {
 
 h1 {
   font-family: "Raleway", sans-serif;
-  text-shadow: 0 3px 6px black;
 }
 
 h2 {
   text-align: center;
   margin: 20px 0;
   font-family: "Raleway", sans-serif;
-  text-shadow: 0 3px 6px black;
 }
 
 h3 {
   margin: 15px 0;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  text-shadow: 0 3px 6px black;
 }
 
 h4 {
   text-align: center;
   font-family: "Raleway", sans-serif;
-  text-shadow: 0 3px 6px black;
+}
+
+/* strong text shadow */
+a, h1, h2, h3, h4 {
+  text-shadow: 0 4px 4px black;
 }
 
 li {
@@ -349,6 +350,7 @@ li {
 }
 
 /***CV***/
+
 .cv h3 {
   text-align: center;
   font-weight: 900;
@@ -402,6 +404,7 @@ li {
 /***footer***/
 .footer {
   background: linear-gradient(#e7dfdd, rgb(207, 205, 204));
+  text-shadow: none;
 }
 
 .footercontent {
