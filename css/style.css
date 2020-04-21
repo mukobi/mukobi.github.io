@@ -199,23 +199,27 @@ li {
   padding: 60px 20px;
 }
 
-.maincontent > div:nth-child(1) {
+/* about */
+.maincontent > div:nth-child(1) { 
   background: linear-gradient(rgb(126, 125, 125), #333333);
   color: white;
 }
 
+/* portfolio */
 .maincontent > div:nth-child(2) {
   background: linear-gradient(rgb(65, 131, 212), rgb(20, 52, 92));
   color: white;
 }
 
+/* xp */
 .maincontent > div:nth-child(3) {
   background: linear-gradient(rgb(47, 151, 47), rgb(8, 61, 21));
   color: white;
 }
 
+/* contact */
 .maincontent > div:nth-child(4) {
-  background: linear-gradient(rgb(163, 60, 189), rgb(100, 29, 128));
+  background: linear-gradient(hsl(256, 100%, 66%), hsl(290, 100%, 13%));
   color: white;
 }
 
