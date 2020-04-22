@@ -77,6 +77,11 @@ h4 {
     font-family: "Raleway", sans-serif;
 }
 
+.navtarget {
+    position: relative;
+    top: -80px;
+}
+
 
 /* strong text shadow */
 
