@@ -58,6 +58,8 @@ p {
 
 h1 {
     font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: inherit;
 }
 
 h2 {
