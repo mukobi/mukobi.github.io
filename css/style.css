@@ -441,8 +441,7 @@ li {
 /***footer***/
 
 .footer {
-    background: linear-gradient(#e7dfdd, rgb(207, 205, 204));
-    text-shadow: none;
+    background: linear-gradient(#404040, #101010);
 }
 
 .footercontent {
@@ -451,7 +450,8 @@ li {
     max-width: 960px;
     margin: 0 auto;
     justify-content: space-between;
-    color: #0e0b16;
+    color: #baadf7;
+    /* text-shadow: 0 1px 8px rgba(0, 0, 0, 0.664); */
     padding: 20px 0;
 }
 
@@ -466,7 +466,7 @@ li {
 .newest_scroll {
     height: 250px;
     overflow-y: scroll;
-    background: linear-gradient(#cfc8c6, #b6b3b1);
+    background: linear-gradient(#404040, #202020);
     padding: 30px;
 }
 
@@ -507,7 +507,7 @@ li {
 }
 
 .copyright {
-    color: #0e0b16;
+    /* color: #0e0b16; */
     padding: 20px;
 }
 
