@@ -391,6 +391,9 @@ li {
     .portfolioscreenshots>.flexrow>div>* {
         text-align: justify !important;
     }
+    .portfolioscreenshots>.flexrow>div>h3 {
+        text-align: left !important;
+    }
 }
 
 
