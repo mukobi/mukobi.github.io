@@ -26,7 +26,8 @@ html {
     padding: 0;
     margin: 0;
     /*   background-color: rgba(0,0,255,0.2); */
-    font-family: "Open Sans", sans-serif;
+    font-family: "Barlow", sans-serif;
+    line-height: 1.3em;
 }
 
 body {
@@ -52,14 +53,24 @@ img,
     text-shadow: none;
 }
 
+a {
+    font-size: 1.2rem;
+}
+
 p {
     text-align: justify;
+    font-size: 1.1rem;
+}
+
+span {
+    font-size: 1.1rem;
 }
 
 h1 {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: inherit;
+    font-size: 2em;
 }
 
 h2 {
