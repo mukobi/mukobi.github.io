@@ -499,7 +499,7 @@ li {
 
 .about_site,
 .around_web {
-    max-width: 50%;
+    width: 100%;
 }
 
 .about_site h4,
