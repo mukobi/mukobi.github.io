@@ -172,50 +172,24 @@
             <div class="newest">
                 <h3 class="strong-shadow">What's new with the website?</h3>
                 <div class="newest_scroll pop-box-shadow">
-                    <ul>
-                        <li>
-                            2019-10-21: Updated the CV.
-                        </li>
-                        <li>
-                            2019-10-17: Updated the about section, resume, and contact information.
-                        </li>
-                        <li>
-                            2018-10-13: Updated almost all of the content and moved to a 3D design with shadows.
-                        </li>
-                        <li>
-                            2018-03-30: Redesigned the color scheme with gradients.
-                        </li>
-                        <li>
-                            2017-09-21: Added a new portrait and updated some information on the page.
-                        </li>
-                        <li>
-                            2017-09-09: Revised the portfolio to show Gabe's new softare and music portfolio websites.
-                        </li>
-                        <li>
-                            2017-07-29: Reworked some styling and layout
-                        </li>
-                        <li>
-                            2017-06-10: Added a new and more recent profile picture.
-                        </li>
-                        <li>
-                            2017-06-07: Updated the resume and separated the curriculum vitae (which has grown quite long) into its own section.
-                        </li>
-                        <li>
-                            2017-05-28: Updated the curriculum vitae and added information about Gabe's music.
-                        </li>
-                        <li>
-                            2017-04-22: Updated the resume.
-                        </li>
-                        <li>
-                            2017-03-31: Added some new font designs.
-                        </li>
-                        <li>
-                            2017-02-20: Added a new forwarded email account to reach me, contact@gabrielmukobi.com
-                        </li>
-                        <li>
-                            2017-02-14: Added the start of a curriculum vitae. More is to written and pictures are to be added very soon!
-                        </li>
+                    <ul id="newest_ul">
                     </ul>
+                    <script>
+                        // Fetch the list of commits from the GitHub repo
+                        fetch('https://api.github.com/repos/mukobi/mukobi.github.io/commits?per_page=100')
+                            .then(response => response.json())
+                            .then(commits => {
+                                console.dir(commits);
+                                var newestUl = document.getElementById("newest_ul");
+                                for (var i = 0; i < commits.length; i++)
+                                {
+                                    var commit = commits[i];
+                                    var message = commit['commit']['message'];
+                                    var date = commit['commit']['committer']['date'].split('T')[0];
+                                    newestUl.innerHTML += `<li>${date}: ${message}</li>`
+                                }
+                            });
+                    </script>
                 </div>
             </div>
             <div class="around_web">
