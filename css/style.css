@@ -245,7 +245,7 @@ li {
 /* about */
 
 .maincontent>div:nth-child(1) {
-    background: linear-gradient(rgb(126, 125, 125), #333333);
+    background: linear-gradient(#666, #333);
     color: white;
 }
 
@@ -461,7 +461,7 @@ li {
 /***footer***/
 
 .footer {
-    background: linear-gradient(#404040, #101010);
+    background: #202020;
 }
 
 .footercontent {
@@ -470,7 +470,7 @@ li {
     max-width: 960px;
     margin: 0 auto;
     justify-content: space-between;
-    color: #baadf7;
+    /* color: #baadf7; */
     /* text-shadow: 0 1px 8px rgba(0, 0, 0, 0.664); */
     padding: 20px 0;
 }
@@ -486,7 +486,7 @@ li {
 .newest_scroll {
     height: 250px;
     overflow-y: scroll;
-    background: linear-gradient(#404040, #202020);
+    background: #181818;
     padding: 30px;
 }
 
