@@ -391,41 +391,6 @@ li {
 }
 
 
-/***CV***/
-
-.cv h3 {
-    text-align: center;
-    font-weight: 900;
-    text-decoration: underline;
-    margin-top: 40px;
-}
-
-.cv h4 {
-    margin: 15px 0;
-    text-align: left;
-    font-style: italic;
-}
-
-.cv .curriculumvitae>div:not(:last-child) {
-    margin-bottom: 80px;
-}
-
-.curriculumvitae p {
-    margin-bottom: 20px;
-}
-
-.curriculumvitae li {
-    display: block;
-    margin-left: 15px;
-    margin-bottom: 15px;
-}
-
-.curriculumvitae li:before {
-    content: "\ffed";
-    margin-right: 0.3em;
-}
-
-
 /***contact***/
 
 .about_contact {
