@@ -383,6 +383,11 @@ li {
     /*border-radius: 5px;*/
 }
 
+.viewpdf span,
+.downloadpdf span {
+    color: black;
+}
+
 .resume img {
     width: 80%;
     margin: 0 auto;
