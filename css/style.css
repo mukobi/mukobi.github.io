@@ -9,13 +9,20 @@ color scheme:
 */
 
 :root {
-    --color-bg-1: linear-gradient(hsl(34, 5%, 28%), #262c2c); /* #262c2c; */
-    --color-bg-2: linear-gradient(hsl(213, 66%, 50%), hsl(213, 90%, 17%)); /* #1B3B6F #4D6684 hsl(213, 63%, 38%) */
-    --color-accent-light: #23f569; /* #09BC8A; */
-    --color-accent-dark: hsl(138, 98%, 31%); /* #09BC8A; */
-    --color-black: #161619; /* #001021 #225696 */
-    --color-white: hsl(240, 100%, 98%); /* #FBF5F3 FAFAFF #F4F3EE D7F9FF F6F8FF EBEBEB */
+    --color-bg-1: linear-gradient(hsl(34, 5%, 28%), #262c2c);
+    /* #262c2c; */
+    --color-bg-2: linear-gradient(hsl(213, 66%, 50%), hsl(213, 90%, 17%));
+    /* #1B3B6F #4D6684 hsl(213, 63%, 38%) */
+    --color-accent-light: #23f569;
+    /* #09BC8A; */
+    --color-accent-dark: hsl(138, 98%, 31%);
+    /* #09BC8A; */
+    --color-black: #161619;
+    /* #001021 #225696 */
+    --color-white: hsl(240, 100%, 98%);
+    /* #FBF5F3 FAFAFF #F4F3EE D7F9FF F6F8FF EBEBEB */
 }
+
 
 /* Resets */
 
@@ -193,7 +200,7 @@ li {
 /*phone rearrangement*/
 
 @media screen and (max-width: 810px) {
-    .navigation > a:first-child {
+    .navigation>a:first-child {
         display: none;
     }
 }
@@ -243,7 +250,6 @@ li {
     }
 }
 
-
 @media screen and (max-width: 300px) {
     h1 {
         font-size: 16px;
@@ -270,6 +276,7 @@ li {
 
 
 /* Section colors */
+
 .maincontent>div:nth-child(2n+1) {
     background: var(--color-bg-1);
 }
@@ -315,7 +322,6 @@ li {
         flex-direction: column-reverse;
     }
 }
-
 
 
 /***portfolio***/
@@ -367,7 +373,7 @@ li {
 
 /***resume***/
 
-.resume > .contentwidthwrapper > .flexrow {
+.resume>.contentwidthwrapper>.flexrow {
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
@@ -380,7 +386,8 @@ li {
     margin: 30px 0px;
     width: 47%;
     text-align: center;
-    background-color: white; /* var(--color-white); */
+    background-color: white;
+    /* var(--color-white); */
     border: 2px solid var(--color-accent-light);
     /*border-radius: 5px;*/
 }
