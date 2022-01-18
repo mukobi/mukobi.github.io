@@ -8,6 +8,17 @@ color scheme:
   orange: #E74700
 */
 
+:root {
+    --color-bg-1: linear-gradient(hsl(34, 5%, 28%), #262c2c); /* #262c2c; */
+    --color-bg-2: linear-gradient(hsl(213, 66%, 50%), hsl(213, 90%, 17%)); /* #1B3B6F #4D6684 hsl(213, 63%, 38%) */
+    --color-accent-light: #23f569; /* #09BC8A; */
+    --color-accent-dark: hsl(138, 98%, 31%); /* #09BC8A; */
+    --color-black: #161619; /* #001021 #225696 */
+    --color-white: hsl(240, 100%, 98%); /* #FBF5F3 FAFAFF #F4F3EE D7F9FF F6F8FF EBEBEB */
+}
+
+/* Resets */
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -28,26 +39,25 @@ html {
     /*   background-color: rgba(0,0,255,0.2); */
     font-family: "Barlow", sans-serif;
     line-height: 1.3em;
-    color: white;
+    color: var(--color-white);
 }
 
 body {
-    color: #e7dfdd;
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.664);
 }
 
 a,
 .color-accent-light {
-    color: #31ee4a;
+    color: var(--color-accent-light);
 }
 
 .color-accent-dark {
-    color: #00c842;
+    color: var(--color-accent-dark);
 }
 
 img,
 .pop-box-shadow {
-    box-shadow: 0 3px 6px black;
+    box-shadow: 0 3px 6px var(--color-black);
 }
 
 .no-shadow {
@@ -105,7 +115,7 @@ h2,
 h3,
 h4,
 .strong-shadow {
-    text-shadow: 0 4px 4px black;
+    text-shadow: 0 4px 4px var(--color-black);
 }
 
 li {
@@ -134,9 +144,9 @@ li {
     height: 80px;
     position: fixed;
     width: 100%;
-    background: linear-gradient(to left, rgb(42, 107, 22), rgb(110, 180, 45));
-    color: white;
-    border-bottom: 5px solid white;
+    background: var(--color-accent-dark);
+    color: var(--color-white);
+    border-bottom: 5px solid var(--color-white);
 }
 
 .navwidthwrapper {
@@ -153,7 +163,7 @@ li {
 }
 
 .navbar .logo a {
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -166,7 +176,7 @@ li {
     display: block;
     padding: 0 25px;
     text-align: center;
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 115%;
     font-family: "Raleway", sans-serif;
@@ -260,27 +270,19 @@ li {
 
 
 /* Section colors */
-.maincontent>div:nth-child(1) {
-    background: linear-gradient(#50514f, #272d2d);
+.maincontent>div:nth-child(2n+1) {
+    background: var(--color-bg-1);
 }
 
-.maincontent>div:nth-child(2) {
-    background: linear-gradient(rgb(65, 131, 212), rgb(20, 52, 92));
-}
-
-.maincontent>div:nth-child(3) {
-    background: linear-gradient(hsl(200, 8%, 34%), hsl(180, 7%, 16%));
-}
-
-.maincontent>div:nth-child(4) {
-    background: linear-gradient(rgb(47, 151, 47), rgb(8, 61, 21));
+.maincontent>div:nth-child(2n) {
+    background: var(--color-bg-2);
 }
 
 
 /***about***/
 
 .description_about img {
-    border: 5px solid #31ee4a;
+    border: 2px solid var(--color-accent-light);
     border-radius: 100%;
     width: 100%;
     max-width: 300px;
@@ -324,7 +326,7 @@ li {
 }
 
 .portfolioscreenshots img {
-    border: 5px solid #31da47;
+    border: 2px solid var(--color-accent-light);
     width: 100%;
     max-width: 480px;
 }
@@ -378,21 +380,21 @@ li {
     margin: 30px 0px;
     width: 47%;
     text-align: center;
-    background-color: white;
-    border: 5px solid #31ee4a;
+    background-color: white; /* var(--color-white); */
+    border: 2px solid var(--color-accent-light);
     /*border-radius: 5px;*/
 }
 
 .viewpdf span,
 .downloadpdf span {
-    color: black;
+    color: var(--color-black);
 }
 
 .resume img {
     width: 80%;
     margin: 0 auto;
     display: block;
-    border: 5px solid #31ee4a;
+    border: 2px solid var(--color-accent-light);
 }
 
 @media screen and (max-width: 500px) {
@@ -460,7 +462,7 @@ li {
 .newest_scroll {
     height: 250px;
     overflow-y: scroll;
-    background: #181818;
+    background: var(--color-black);
     padding: 30px;
 }
 
@@ -493,7 +495,7 @@ li {
 
 .around_web img {
     height: 80px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--color-black);
     background-blend-mode: hue;
     display: inline-block;
     margin: 10px;
