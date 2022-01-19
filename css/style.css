@@ -50,7 +50,7 @@ html {
 }
 
 body {
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.664);
+    text-shadow: 1px 1px 2px var(--color-black);
 }
 
 a,
@@ -64,7 +64,7 @@ a,
 
 img,
 .pop-box-shadow {
-    box-shadow: 0 3px 6px var(--color-black);
+    box-shadow: 0 2px 4px var(--color-black);
 }
 
 .no-shadow {
@@ -115,15 +115,17 @@ h4 {
 
 
 /* strong text shadow */
-
-a,
+/* Commented out because using the same for body */
+/* a,
 h1,
 h2,
 h3,
 h4,
 .strong-shadow {
-    text-shadow: 0 4px 4px var(--color-black);
-}
+    text-shadow: 0 2px 2px var(--color-black);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-black);
+} */
 
 li {
     list-style-type: square;
@@ -454,7 +456,6 @@ li {
     margin: 0 auto;
     justify-content: space-between;
     /* color: #baadf7; */
-    /* text-shadow: 0 1px 8px rgba(0, 0, 0, 0.664); */
     padding: 20px 0;
 }
 
