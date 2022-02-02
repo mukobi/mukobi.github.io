@@ -438,7 +438,7 @@ li {
 
 .contact ul li,
 .contact .accounts p {
-    margin-bottom: 15px;
+    margin: 15px 5px;
     text-align: center;
 }
 
