@@ -35,8 +35,12 @@
                 <h2>About</h2>
                 <div class="description_about flexrow">
                     <div class="about_text">
-                        <p>Hello, I'm Gabe Mukobi! I am a digital creator who is passionate about virtual reality, games, AI, film, music, 3D art, and photography. At Stanford University, I'm studying computer science with a focus on graphics, and I'm involved
-                            in several VR and music clubs. Outsite of school, I'm an avid game developer. I aspire to create media, tools, and experiences that combine creativity with technology to uplift others and make the world a better place.
+                        <p>Hello, I'm Gabe Mukobi! I am a digital creator who is passionate about virtual reality,
+                            games, AI, film, music, 3D art, and photography. At Stanford University, I'm studying
+                            computer science with a focus on graphics, and I'm involved
+                            in several VR and music clubs. Outsite of school, I'm an avid game developer. I aspire to
+                            create media, tools, and experiences that combine creativity with technology to uplift
+                            others and make the world a better place.
                         </p>
                     </div>
                     <div class="about_image">
@@ -70,7 +74,8 @@
                             <h3>
                                 <a href="https://software.gabrielmukobi.com/games">Sticks and Stones Software</a>
                             </h3>
-                            <p>Sticks and Stones Software is the name of my software development company. Come see all of the games, websites, desktop software, and mobile apps I create!</p>
+                            <p>Sticks and Stones Software is the name of my software development company. Come see all
+                                of the games, websites, desktop software, and mobile apps I create!</p>
                         </div>
                     </div>
                     <div class="flexrow">
@@ -78,7 +83,8 @@
                             <h3>
                                 <a href="https://www.artstation.com/gabrielmukobi">Digital 3D Art</a>
                             </h3>
-                            <p>My ArtStation portfolio is where I post 3D art made with Blender, Houdini, Unreal Engine, and more!
+                            <p>My ArtStation portfolio is where I post 3D art made with Blender, Houdini, Unreal Engine,
+                                and more!
                             </p>
                         </div>
                         <a href="https://www.artstation.com/gabrielmukobi">
@@ -101,7 +107,9 @@
                             <h3>
                                 <a href="https://music.gabrielmukobi.com">Mukobi Music</a>
                             </h3>
-                            <p>A website for anything regarding the musical side of me. Here, you can find information about my music (including my first solo album, <i>Anywhere But Here</i>), my career and groups I've played with, lessons with me, and more.</p>
+                            <p>A website for anything regarding the musical side of me. Here, you can find information
+                                about my music (including my first solo album, <i>Anywhere But Here</i>), my career and
+                                groups I've played with, lessons with me, and more.</p>
                         </div>
                         <a href="https://music.gabrielmukobi.com">
                             <img src="images/mukobimusic.jpg" alt="Mukobi Music website screenshot" />
@@ -115,7 +123,8 @@
                             <h3>
                                 <a href="https://film.gabrielmukobi.com">Film</a>
                             </h3>
-                            <p>A minimalistic film portfolio to highlight short films, video essays, and other motion picture works I've made.</p>
+                            <p>A minimalistic film portfolio to highlight short films, video essays, and other motion
+                                picture works I've made.</p>
                         </div>
                     </div>
                 </div>
@@ -126,11 +135,13 @@
             <div class="contentwidthwrapper">
                 <h2>Resume</h2>
                 <div class="flexrow">
-                    <a class="viewpdf no-shadow color-accent-dark pop-box-shadow" href="documents/Gabriel%20Mukobi%20Resume.pdf">
+                    <a class="viewpdf no-shadow color-accent-dark pop-box-shadow"
+                        href="documents/Gabriel%20Mukobi%20Resume.pdf">
                         <span>View</span>
                         <span>PDF</span>
                     </a>
-                    <a class="downloadpdf no-shadow color-accent-dark pop-box-shadow" href="documents/Gabriel%20Mukobi%20Resume.pdf" download>
+                    <a class="downloadpdf no-shadow color-accent-dark pop-box-shadow"
+                        href="documents/Gabriel%20Mukobi%20Resume.pdf" download>
                         <span>Download</span>
                         <span>PDF</span>
                     </a>
@@ -149,7 +160,8 @@
             <div class="contentwidthwrapper">
                 <h2>Contact</h2>
                 <div>
-                    <p class="about_contact">To contact me, please use one of the following methods. I will try to get back to you as soon as possible!</p>
+                    <p class="about_contact">To contact me, please use one of the following methods. I will try to get
+                        back to you as soon as possible!</p>
                     <div class="accounts flexrow">
                         <div>
                             <p>Email:
@@ -171,6 +183,11 @@
                                 <a href="https://calendly.com/gabrielmukobi">Schedule a Meeting</a>
                             </p>
                         </div>
+                        <div>
+                            <p>Feedback:
+                                <a href="https://www.admonymous.co/gmukobi">Send anonymously</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,8 +207,7 @@
                             .then(commits => {
                                 console.dir(commits);
                                 var newestUl = document.getElementById("newest_ul");
-                                for (var i = 0; i < commits.length; i++)
-                                {
+                                for (var i = 0; i < commits.length; i++) {
                                     var commit = commits[i];
                                     var message = commit['commit']['message'];
                                     var date = commit['commit']['committer']['date'].split('T')[0];
@@ -216,16 +232,20 @@
             </div>
             <div class="about_site">
                 <h4 class="strong-shadow">About This Site</h4>
-                <p>This website was designed and built from scratch with extra love by Gabriel Mukobi. It is constantly being updated with new information, improved design, and a more pleasant user experience, so be sure to check back soon.
+                <p>This website was designed and built from scratch with extra love by Gabriel Mukobi. It is constantly
+                    being updated with new information, improved design, and a more pleasant user experience, so be sure
+                    to check back soon.
                     <a href="https://github.com/mukobi/mukobi.github.io" class="strong-shadow">View the GitHub
-            repository here.</a> Hope you enjoy!</p>
+                        repository here.</a> Hope you enjoy!
+                </p>
             </div>
         </div>
         <div class="copyright">
             <p>Copyright &copy;
                 <script>
                     document.write(new Date().getFullYear());
-                </script> Gabriel Mukobi. All Rights Reserved.</p>
+                </script> Gabriel Mukobi. All Rights Reserved.
+            </p>
         </div>
     </div>
 </body>
