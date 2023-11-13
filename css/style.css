@@ -233,9 +233,11 @@ li {
     .logo {
         width: 100px;
     }
+
     .navigation a {
         padding: 0 12px;
     }
+
     .navigation .cvnav {
         padding: 0 15px;
     }
@@ -245,14 +247,17 @@ li {
     .navigation {
         flex-grow: 1;
     }
+
     .navigation a {
         font-size: 14px;
         width: auto;
         padding: 0 5px;
     }
+
     .navigation .cvnav {
         padding: 0 10px;
     }
+
     .navwidthwrapper {
         margin: 0 10px 0 10px;
     }
@@ -304,11 +309,16 @@ li {
 }
 
 .description_about>div>p {
-    max-width: 480px;
+    /* max-width: 480px; */
+}
+
+.about .contentwidthwrapper>div {
+    margin: 16pt 0;
 }
 
 .about .contentwidthwrapper .flexrow {
     align-items: center;
+    justify-content: space-between;
 }
 
 .about .flexrow div:first-child>* {
@@ -316,7 +326,7 @@ li {
     display: block;
 }
 
-.description_about .flexrow div:nth-child(1) {
+.description_about.flexrow div:nth-child(1) {
     max-width: 600px;
 }
 
@@ -332,7 +342,13 @@ li {
 }
 
 
+
 /***portfolio***/
+
+
+.publications>div>p {
+    margin: 4pt 0 4pt 32pt;
+}
 
 .portfolioscreenshots>.flexrow {
     align-items: center;
@@ -364,9 +380,11 @@ li {
         margin: 20px 10%;
         order: 2;
     }
+
     .portfolioscreenshots>.flexrow>div>* {
         text-align: justify !important;
     }
+
     .portfolioscreenshots>.flexrow>div>h3 {
         text-align: left !important;
     }
@@ -413,15 +431,18 @@ li {
 }
 
 @media screen and (max-width: 500px) {
+
     .resume .flexrow,
     .resume img {
         width: 100%;
     }
+
     .viewpdf,
     .downloadpdf {
         padding: 15px 5px;
         margin: 15px 0px;
     }
+
     .viewpdf>span,
     .downloadpdf>span {
         display: block;
