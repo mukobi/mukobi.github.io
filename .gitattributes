@@ -1,0 +1,13 @@
+# Normalize text files to LF across OSes
+* text=auto eol=lf
+
+# Binary assets
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.webp -text
+*.svg -text
+*.ico -text
+*.pdf -text
+*.zip -text

@@ -220,6 +220,10 @@ li {
         margin: 0 10px 0 20px;
         width: auto;
     }
+
+    p {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 658px) {
