@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Gabriel Mukobi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Raleway:300" rel="stylesheet">
+    <meta name="description"
+        content="Gabriel Mukobi — AI governance researcher, Ph.D. student at UC Berkeley, and member of technical staff at NIST's U.S. Center for AI Standards and Innovation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Raleway:300&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
@@ -30,7 +35,7 @@
     </div>
     <div class="maincontent">
         <div class="about">
-            <a name="about" class="navtarget"></a>
+            <a id="about" class="navtarget"></a>
             <div class="contentwidthwrapper">
                 <h2>About</h2>
                 <div class="description_about flexrow">
@@ -40,7 +45,7 @@
                             Berkeley advised by <a href="https://jsteinhardt.stat.berkeley.edu/">Jacob Steinhardt</a>
                             and <a href="https://dawnsong.io/">Dawn Song</a>. My research focuses on <a
                                 href="https://arxiv.org/abs/2407.14981">technical AI governance</a>, especially
-                            understanding, securing, and preventing the misuse of language model systems. I completed my M.S. and B.S. in Computer Science at Stanford.
+                            understanding, securing, and preventing the misuse of language model systems. I completed my M.S. and B.S. in Computer Science at Stanford.</p>
                         <p>My other interests include <a
                                 href="https://software.gabrielmukobi.com/games/">games</a>, <a
                                 href="https://music.gabrielmukobi.com/">music</a>, <a
@@ -112,7 +117,7 @@
             </div>
         </div>
         <div class="portfolio">
-            <a name="portfolio" class="navtarget"></a>
+            <a id="portfolio" class="navtarget"></a>
             <div class="contentwidthwrapper">
                 <h2>Portfolio Sites</h2>
                 <div class="portfolioscreenshots">
@@ -180,7 +185,7 @@
             </div>
         </div>
         <div class="resume">
-            <a name="resume" class="navtarget"></a>
+            <a id="resume" class="navtarget"></a>
             <div class="contentwidthwrapper">
                 <h2>Resume</h2>
                 <div class="flexrow">
@@ -196,16 +201,14 @@
                     </a>
                 </div>
                 <div>
-                    <a>
-                        <a href="documents/Gabriel%20Mukobi%20Resume.pdf">
-                            <img src="images/Gabriel%20Mukobi%20Resume-1.png" alt="gabriel mukobi resume" />
-                        </a>
+                    <a href="documents/Gabriel%20Mukobi%20Resume.pdf">
+                        <img src="images/Gabriel%20Mukobi%20Resume-1.png" alt="gabriel mukobi resume" />
                     </a>
                 </div>
             </div>
         </div>
         <div class="contact">
-            <a name="contact" class="navtarget"></a>
+            <a id="contact" class="navtarget"></a>
             <div class="contentwidthwrapper">
                 <h2>Contact</h2>
                 <div>
@@ -251,12 +254,20 @@
                             .then(commits => {
                                 // console.dir(commits);
                                 var newestUl = document.getElementById("newest_ul");
+                                if (!Array.isArray(commits)) {
+                                    newestUl.innerHTML = "<li>Unable to load updates right now.</li>";
+                                    return;
+                                }
                                 for (var i = 0; i < commits.length; i++) {
                                     var commit = commits[i];
                                     var message = commit['commit']['message'];
                                     var date = commit['commit']['committer']['date'].split('T')[0];
-                                    newestUl.innerHTML += `<li>${date}: ${message}</li>`
+                                    newestUl.innerHTML += `<li>${date}: ${message}</li>`;
                                 }
+                            })
+                            .catch(() => {
+                                var newestUl = document.getElementById("newest_ul");
+                                newestUl.innerHTML = "<li>Unable to load updates right now.</li>";
                             });
                     </script>
                 </div>

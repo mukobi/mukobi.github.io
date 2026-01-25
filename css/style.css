@@ -116,6 +116,7 @@ h4 {
 .navtarget {
     position: relative;
     top: -80px;
+    scroll-margin-top: 90px;
 }
 
 
@@ -203,6 +204,7 @@ li {
     height: 80px;
     width: 100%;
 }
+
 
 
 /*phone rearrangement*/
