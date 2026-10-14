@@ -129,8 +129,7 @@
                             <h3>
                                 <a href="https://software.gabrielmukobi.com/ai">Software Portfolio</a>
                             </h3>
-                            <p>Come to my software development portfolio to see some of the SI projects, games,
-                                websites, and desktop software I create!</p>
+                            <p>Selected software projects, games, and websites.</p>
                         </div>
                     </div>
                     <div class="flexrow">
@@ -218,36 +217,6 @@
     </div>
     <div class="footer">
         <div class="footercontent flexrow">
-            <div class="newest">
-                <h3 class="strong-shadow">What's new with the website?</h3>
-                <div class="newest_scroll pop-box-shadow">
-                    <ul id="newest_ul">
-                    </ul>
-                    <script>
-                        // Fetch the list of commits from the GitHub repo
-                        fetch('https://api.github.com/repos/mukobi/mukobi.github.io/commits?per_page=100')
-                            .then(response => response.json())
-                            .then(commits => {
-                                // console.dir(commits);
-                                var newestUl = document.getElementById("newest_ul");
-                                if (!Array.isArray(commits)) {
-                                    newestUl.innerHTML = "<li>Unable to load updates right now.</li>";
-                                    return;
-                                }
-                                for (var i = 0; i < commits.length; i++) {
-                                    var commit = commits[i];
-                                    var message = commit['commit']['message'];
-                                    var date = commit['commit']['committer']['date'].split('T')[0];
-                                    newestUl.innerHTML += `<li>${date}: ${message}</li>`;
-                                }
-                            })
-                            .catch(() => {
-                                var newestUl = document.getElementById("newest_ul");
-                                newestUl.innerHTML = "<li>Unable to load updates right now.</li>";
-                            });
-                    </script>
-                </div>
-            </div>
             <div class="around_web">
                 <h4 class="strong-shadow">Around The Web</h4>
                 <a href="https://www.linkedin.com/in/gabrielmukobi/">
@@ -266,15 +235,9 @@
                 <a href="https://aiacumen.substack.com/">
                     <img src="/images/vendor/ai acumen icon.png" alt="ai acumen" loading="lazy" decoding="async" /></a>
             </div>
-            <div class="about_site">
-                <h4 class="strong-shadow">About This Site</h4>
-                <p>Designed and built by Gabriel Mukobi.
-                    <a href="https://github.com/mukobi/mukobi.github.io" class="strong-shadow">View the GitHub
-                        repository here.</a>
-                </p>
-            </div>
         </div>
         <div class="copyright">
+            <p>Views are my own.</p>
             <p>Copyright &copy;
                 <script>
                     document.write(new Date().getFullYear());

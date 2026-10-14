@@ -496,36 +496,10 @@ li {
     margin-bottom: 30px;
 }
 
-.footercontent .newest {
-    width: 100%;
-}
-
-.newest_scroll {
-    height: 250px;
-    overflow-y: scroll;
-    background: var(--color-black);
-    padding: 30px;
-}
-
-.newest h3 {
-    text-align: center;
-}
-
-.newest li {
-    margin-bottom: 30px;
-    margin-left: 25px;
-}
-
-.newest li:last-child {
-    margin-bottom: 0;
-}
-
-.about_site,
 .around_web {
     width: 100%;
 }
 
-.about_site h4,
 .around_web h4 {
     margin-bottom: 20px;
 }
